@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+    <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
+    <title>The Product</title>
+</head>
+<body>
+    <div id="overlay">
+        <div id="overlay-exit">&#10005;</div>
+        <div id="learn-form">
+            <div class="half-container">
+                <h2 id="learn-form-title">Change your life</h2>
+                <form id="email-form" action="https://www.freecodecamp.com/email-submit">
+                    <input type="email" id="email" name="email" placeholder="email" require>
+                    <input type="submit" id="submit" value="Inquire">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="page-wrapper">
+                    <header id="header" class="half-container">
+                <div id="title-container">
+                    <!--<div class="circle" id="circle-one"></div>-->
+                    <h1 id="h1-one">The Product</h1>
+                    <nav id="nav-bar">
+                        <ul>
+                            <li><a class="nav-link" href="#product">Product</a></li>
+                            <li><a class="nav-link" href="#info">Info</a></li>
+                            <li><a class="nav-link" href="#inquiry">Inquire</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <!--
+            <div id="info-container">
+                <p>
+                    Lorem Ipsum Thing Lorem Ipsum Thing Lorem Ipsum Thing Lorem Ipsum Thing<br>
+                    Lorem Ipsum Thing Lorem Ipsum Thing Lorem Ipsum Thing Lorem Ipsum<br>
+                    Lorem Ipsum Thing Lorem Ipsum Thing Lorem Ipsum Thing
+                </p>
+            </div>
+            -->
+
+            <!--
+            <div id="learn-btn-container" class="circle">
+                <a href="#" id="learn-btn">Learn</a>
+            </div>
+            <div id="home-btn">
+                <img id="header-img" src="https://www.dropbox.com/s/rlemeka4chr8nzn/home-con.png?raw=1">
+            </div>
+            -->
+        <section id="product">
+            <canvas id="renderCanvas"></canvas>
+            <!--<iframe id="video" height="315" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>-->
+        </section>
+        <!--
+        <section id="info">
+            <p>info</p>
+        </section>
+        <section id="inquiry">
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input type="email" id="email" name="email" placeholder="email" require>
+                <input type="submit" id="submit" value="Inquire">
+            </form>
+        </section>
+        -->
+    </div>
+    <script src="js/index.js"></script>
+    <!--<script src="js/header.js"></script>-->
+</body>
+</html>
