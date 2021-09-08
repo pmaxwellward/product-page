@@ -1006,7 +1006,6 @@ p {
             animation-duration: 1s;
             animation-timing-function: ease-in;
             animation-direction: normal;
-            /* animation: intersect-fade 1s ease-in normal; */
 }
 
 .is-visible-delay {
@@ -1020,7 +1019,6 @@ p {
             animation-delay: 0.25s;
             animation-timing-function: ease-in;
             animation-direction: normal;
-            /* animation: intersect-fade-delay 1s 0.25s ease-in normal; */
 }
 
 .is-visible-wipe {
@@ -1032,7 +1030,6 @@ p {
             animation-duration: 1.5s;
             animation-timing-function: ease-in;
             animation-direction: normal;
-            /* animation: intersect-wipe 1.5s ease-in normal; */
 }
 
 .is-visible-title {
@@ -1040,11 +1037,10 @@ p {
     -webkit-animation-duration: 0.45s;
     -webkit-animation-timing-function: ease-in;
     -webkit-animation-direction: normal;
-    -webkit-animation-name: title-wipe;
-    -webkit-animation-duration: 0.45s;
-    -webkit-animation-timing-function: ease-in;
-    -webkit-animation-direction: normal;
-            /* animation: title-wipe 0.45s ease-in normal; */
+            animation-name: title-wipe;
+            animation-duration: 0.45s;
+            animation-timing-function: ease-in;
+            animation-direction: normal;
 }
 
 .is-visible-button {
@@ -1053,25 +1049,15 @@ p {
     -webkit-animation-duration: 0.5s;
     -webkit-animation-timing-function: ease-in;
     -webkit-animation-direction: normal;
-            animation: intersect-fade 0.5s ease-in normal;
             animation-name: intersect-fade;
             animation-duration: 0.5s;
             animation-timing-function: ease-in;
             animation-direction: normal;
-            /* animation: intersect-fade 0.5s ease-in normal;     */
 }
 
 @-webkit-keyframes intersect-fade {
     0% {
-        opacity: 0;
-    }
-
-    25% {
-        opacity: 25%;
-    }
-
-    50% {
-        opacity: 50%;
+        opacity: 0%;
     }
 
     100% {
@@ -1081,15 +1067,7 @@ p {
 
 @keyframes intersect-fade {
     0% {
-        opacity: 0;
-    }
-
-    25% {
-        opacity: 25%;
-    }
-
-    50% {
-        opacity: 50%;
+        opacity: 0%;
     }
 
     100% {
@@ -1099,15 +1077,7 @@ p {
 
 @-webkit-keyframes intersect-fade-delay {
     0% {
-        opacity: 0;
-    }
-
-    25% {
-        opacity: 25%;
-    }
-
-    50% {
-        opacity: 50%;
+        opacity: 0%;
     }
 
     100% {
@@ -1117,15 +1087,7 @@ p {
 
 @keyframes intersect-fade-delay {
     0% {
-        opacity: 0;
-    }
-
-    25% {
-        opacity: 25%;
-    }
-
-    50% {
-        opacity: 50%;
+        opacity: 0%;
     }
 
     100% {
@@ -1135,27 +1097,15 @@ p {
 
 @-webkit-keyframes intersect-wipe {
     0% {
-        opacity: 0;
+        opacity: 0%;
         -webkit-clip-path: inset(0 100% 0 0);
                 clip-path: inset(0 100% 0 0);
     }
 
-    25% {
-        opacity: 25%;
-        -webkit-clip-path: inset(0 75% 0 0);
-                clip-path: inset(0 75% 0 0);
-    }
-
-    50% {
-        opacity: 50%;
-        -webkit-clip-path: inset(0 50% 0 0);
-                clip-path: inset(0 50% 0 0);
-    }
-
     100% {
         opacity: 100%;
-        -webkit-clip-path: inset(0 0 0 0);
-                clip-path: inset(0 0 0 0);
+        -webkit-clip-path: inset(0 0% 0 0);
+                clip-path: inset(0 0% 0 0);
     }
 }
 
@@ -1166,22 +1116,10 @@ p {
                 clip-path: inset(0 100% 0 0);
     }
 
-    25% {
-        opacity: 25%;
-        -webkit-clip-path: inset(0 75% 0 0);
-                clip-path: inset(0 75% 0 0);
-    }
-
-    50% {
-        opacity: 50%;
-        -webkit-clip-path: inset(0 50% 0 0);
-                clip-path: inset(0 50% 0 0);
-    }
-
     100% {
         opacity: 100%;
-        -webkit-clip-path: inset(0 0 0 0);
-                clip-path: inset(0 0 0 0);
+        -webkit-clip-path: inset(0 0% 0 0);
+                clip-path: inset(0 0% 0 0);
     }
 }
 
@@ -1193,22 +1131,10 @@ p {
                     clip-path: inset(0 0 100% 0);
         }
 
-        25% {
-            opacity: 25%;
-            -webkit-clip-path: inset(0 0 75% 0);
-                    clip-path: inset(0 0 75% 0);
-        }
-    
-        50% {
-            opacity: 50%;
-            -webkit-clip-path: inset(0 0 50% 0);
-                    clip-path: inset(0 0 50% 0);
-        }
-    
         100% {
             opacity: 100%;
-            -webkit-clip-path: inset(0 0 0 0);
-                    clip-path: inset(0 0 0 0);
+            -webkit-clip-path: inset(0 0 0% 0);
+                    clip-path: inset(0 0 0% 0);
         }
     }
     @keyframes intersect-wipe {
@@ -1217,23 +1143,11 @@ p {
             -webkit-clip-path: inset(0 0 100% 0);
                     clip-path: inset(0 0 100% 0);
         }
-
-        25% {
-            opacity: 25%;
-            -webkit-clip-path: inset(0 0 75% 0);
-                    clip-path: inset(0 0 75% 0);
-        }
-    
-        50% {
-            opacity: 50%;
-            -webkit-clip-path: inset(0 0 50% 0);
-                    clip-path: inset(0 0 50% 0);
-        }
     
         100% {
             opacity: 100%;
-            -webkit-clip-path: inset(0 0 0 0);
-                    clip-path: inset(0 0 0 0);
+            -webkit-clip-path: inset(0 0 0% 0);
+                    clip-path: inset(0 0 0% 0);
         }
     }
 }
@@ -1245,22 +1159,10 @@ p {
                 clip-path: inset(0 100% 0 0);
     }
 
-    25% {
-        opacity: 25%;
-        -webkit-clip-path: inset(0 75% 0 0);
-                clip-path: inset(0 75% 0 0);
-    }
-
-    50% {
-        opacity: 50%;
-        -webkit-clip-path: inset(0 50% 0 0);
-                clip-path: inset(0 50% 0 0);
-    }
-
     100% {
         opacity: 100%;
-        -webkit-clip-path: inset(0 0 0 0);
-                clip-path: inset(0 0 0 0);
+        -webkit-clip-path: inset(0 0% 0 0);
+                clip-path: inset(0 0% 0 0);
     }
 }
 
@@ -1271,21 +1173,9 @@ p {
                 clip-path: inset(0 100% 0 0);
     }
 
-    25% {
-        opacity: 25%;
-        -webkit-clip-path: inset(0 75% 0 0);
-                clip-path: inset(0 75% 0 0);
-    }
-
-    50% {
-        opacity: 50%;
-        -webkit-clip-path: inset(0 50% 0 0);
-                clip-path: inset(0 50% 0 0);
-    }
-
     100% {
         opacity: 100%;
-        -webkit-clip-path: inset(0 0 0 0);
-                clip-path: inset(0 0 0 0);
+        -webkit-clip-path: inset(0 0% 0 0);
+                clip-path: inset(0 0% 0 0);
     }
 }
