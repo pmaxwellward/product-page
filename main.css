@@ -1002,7 +1002,11 @@ p {
     -webkit-animation-duration: 1s;
     -webkit-animation-timing-function: ease-in;
     -webkit-animation-direction: normal;
-            animation: intersect-fade 1s ease-in normal;
+            animation-name: intersect-fade;
+            animation-duration: 1s;
+            animation-timing-function: ease-in;
+            animation-direction: normal;
+            /* animation: intersect-fade 1s ease-in normal; */
 }
 
 .is-visible-delay {
@@ -1011,7 +1015,12 @@ p {
     -webkit-animation-delay: 0.25s;
     -webkit-animation-timing-function: ease-in;
     -webkit-animation-direction: normal;
-            animation: intersect-fade-delay 1s 0.25s ease-in normal;
+            animation-name: intersect-fade-delay;
+            animation-duration: 1s;
+            animation-delay: 0.25s;
+            animation-timing-function: ease-in;
+            animation-direction: normal;
+            /* animation: intersect-fade-delay 1s 0.25s ease-in normal; */
 }
 
 .is-visible-wipe {
@@ -1019,7 +1028,11 @@ p {
     -webkit-animation-duration: 1.5s;
     -webkit-animation-timing-function: ease-in;
     -webkit-animation-direction: normal;
-            animation: intersect-wipe 1.5s ease-in normal;
+            animation-name: intersect-wipe;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in;
+            animation-direction: normal;
+            /* animation: intersect-wipe 1.5s ease-in normal; */
 }
 
 .is-visible-title {
@@ -1027,7 +1040,11 @@ p {
     -webkit-animation-duration: 0.45s;
     -webkit-animation-timing-function: ease-in;
     -webkit-animation-direction: normal;
-            animation: title-wipe 0.45s ease-in normal;
+    -webkit-animation-name: title-wipe;
+    -webkit-animation-duration: 0.45s;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-direction: normal;
+            /* animation: title-wipe 0.45s ease-in normal; */
 }
 
 .is-visible-button {
@@ -1036,7 +1053,12 @@ p {
     -webkit-animation-duration: 0.5s;
     -webkit-animation-timing-function: ease-in;
     -webkit-animation-direction: normal;
-            animation: intersect-fade 0.5s ease-in normal;    
+            animation: intersect-fade 0.5s ease-in normal;
+            animation-name: intersect-fade;
+            animation-duration: 0.5s;
+            animation-timing-function: ease-in;
+            animation-direction: normal;
+            /* animation: intersect-fade 0.5s ease-in normal;     */
 }
 
 @-webkit-keyframes intersect-fade {
