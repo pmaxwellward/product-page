@@ -120,7 +120,7 @@ p {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-        grid-template-areas: 'block-a block-b block-c form';
+    grid-template-areas: 'block-a block-b block-c form';
 }
 
 @media only screen and (max-width: 600px) {
@@ -129,9 +129,9 @@ p {
         grid-template-columns: 33.333% 33.333% 33.333%;
         -ms-grid-rows: 50% 50%;
         grid-template-rows: 50% 50%;
-            grid-template-areas:
-            'block-a block-c block-b' 
-            'form form form';
+        grid-template-areas:
+        'block-a block-c block-b' 
+        'form form form';
     }
 }
 
@@ -173,7 +173,6 @@ p {
 
 @media only screen and (max-width: 600px) {
     .l-info {
-        /* width: 90%; */
         margin: 8.33325vh auto
     }
 }
@@ -186,11 +185,28 @@ p {
     -ms-grid-rows: auto;
     grid-template-rows: auto;
     row-gap: 31vh;
-        grid-template-areas: 
+    grid-template-areas: 
     'info-text-a info-text-a info-img-a'
     'info-text-b info-text-b info-img-b'
     'info-text-c info-text-c info-img-c'
     'info-text-d info-text-d info-text-d';
+}
+
+@media only screen and (max-width: 600px) {
+    .l-info-grid {
+        row-gap: 1vh;
+        -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+        -ms-grid-rows: 33.333vh 1vh 33.333vh 1vh 33.333vh 1vh 33.333vh 1vh 33.333vh 1vh 33.333vh;
+        grid-template-rows: repeat(6, 33.333vh);
+        grid-template-areas: 
+        'info-img-a'
+        'info-text-a'
+        'info-img-b'
+        'info-text-b'
+        'info-img-c'
+        'info-text-c';
+    }
 }
 
 .l-info-grid > div {
@@ -203,23 +219,6 @@ p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-}
-
-@media only screen and (max-width: 600px) {
-    .l-info-grid {
-        row-gap: 1vh;
-        -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
-        -ms-grid-rows: 33.333vh 1vh 33.333vh 1vh 33.333vh 1vh 33.333vh 1vh 33.333vh 1vh 33.333vh;
-        grid-template-rows: repeat(6, 33.333vh);
-            grid-template-areas: 
-        'info-img-a'
-        'info-text-a'
-        'info-img-b'
-        'info-text-b'
-        'info-img-c'
-        'info-text-c';
-    }
 }
 
 .l-info-text, .l-info-img {
@@ -240,12 +239,8 @@ p {
         font-size: 4.25vw;
         height: 33.333vh;
         border-radius: 5px;
-        -webkit-box-shadow: 
-            /* 3px 3px 5px hsl(0, 0%, 92.5%), */
-            inset 3px 3px 25px hsl(0, 0%, 97.5%);
-                box-shadow: 
-            /* 3px 3px 5px hsl(0, 0%, 92.5%), */
-            inset 3px 3px 25px hsl(0, 0%, 97.5%);
+        -webkit-box-shadow: inset 3px 3px 25px hsl(0, 0%, 97.5%);
+                box-shadow: inset 3px 3px 25px hsl(0, 0%, 97.5%);
     } 
 }
 
@@ -273,7 +268,10 @@ p {
 
 @media only screen and (max-width: 600px) {
     .l-product {
-        width: 50%
+        width: 50%;
+        -ms-grid-row: 2;
+        -ms-grid-row-span: 1;
+        -ms-grid-column: 1;
     }
 }
 
@@ -305,7 +303,7 @@ p {
     grid-template-columns: 50% 50%;
     -ms-grid-rows: 60vh 40vh;
     grid-template-rows: 60vh 40vh;
-        grid-template-areas: 
+    grid-template-areas: 
         'product title'
         'product splash-btn';
 }
@@ -316,16 +314,12 @@ p {
         grid-template-columns: 100vw;
         -ms-grid-rows: 17.5vh 65vh 17.5vh;
         grid-template-rows: 17.5vh 65vh 17.5vh;
-            grid-template-areas: 
+        grid-template-areas: 
             'title'
             'product' 
             'splash-btn';
     }
-    .l-product {
-        -ms-grid-row: 2;
-        -ms-grid-row-span: 1;
-        -ms-grid-column: 1;
-    }
+
 }
 
 .l-splash-btn {
@@ -604,7 +598,6 @@ p {
     }
 }
 
-
 .footer-form > div {
     width: 100%;
 }
@@ -667,13 +660,11 @@ p {
     }
 }
 
-
 @media only screen and (max-width: 600px) {
     .footer-text {
         font-size: 3vw;
     }
 }
-
 
 .info-text-a {
     -ms-grid-row: 1;
@@ -1044,7 +1035,6 @@ p {
 }
 
 .is-visible-button {
-    -webkit-animation: intersect-fade 0.5s ease-in normal;
     -webkit-animation-name: intersect-fade;
     -webkit-animation-duration: 0.5s;
     -webkit-animation-timing-function: ease-in;
