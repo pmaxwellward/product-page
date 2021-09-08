@@ -1023,53 +1023,53 @@ p {
 }
 
 @-webkit-keyframes intersect-fade {
-    from {
+    0% {
         opacity: 0;
     }
 
-    to {
+    100% {
         opacity: 100%;
     }
 }
 
 @keyframes intersect-fade {
-    from {
+    0% {
         opacity: 0;
     }
 
-    to {
+    100% {
         opacity: 100%;
     }
 }
 
 @-webkit-keyframes intersect-fade-delay {
-    from {
+    0% {
         opacity: 0;
     }
 
-    to {
+    100% {
         opacity: 100%;
     }
 }
 
 @keyframes intersect-fade-delay {
-    from {
+    0% {
         opacity: 0;
     }
 
-    to {
+    100% {
         opacity: 100%;
     }
 }
 
 @-webkit-keyframes intersect-wipe {
-    from {
+    0% {
         opacity: 0;
         -webkit-clip-path: inset(0 100% 0 0);
                 clip-path: inset(0 100% 0 0);
     }
 
-    to {
+    100% {
         opacity: 100%;
         -webkit-clip-path: inset(0 0 0 0);
                 clip-path: inset(0 0 0 0);
@@ -1077,13 +1077,13 @@ p {
 }
 
 @keyframes intersect-wipe {
-    from {
+    0% {
         opacity: 0;
         -webkit-clip-path: inset(0 100% 0 0);
                 clip-path: inset(0 100% 0 0);
     }
 
-    to {
+    100% {
         opacity: 100%;
         -webkit-clip-path: inset(0 0 0 0);
                 clip-path: inset(0 0 0 0);
@@ -1092,26 +1092,26 @@ p {
 
 @media only screen and (max-width: 600px) {
     @-webkit-keyframes intersect-wipe {
-        from {
+        0% {
             opacity: 0;
             -webkit-clip-path: inset(0 0 100% 0);
                     clip-path: inset(0 0 100% 0);
         }
     
-        to {
+        100% {
             opacity: 100%;
             -webkit-clip-path: inset(0 0 0 0);
                     clip-path: inset(0 0 0 0);
         }
     }
     @keyframes intersect-wipe {
-        from {
+        0% {
             opacity: 0;
             -webkit-clip-path: inset(0 0 100% 0);
                     clip-path: inset(0 0 100% 0);
         }
     
-        to {
+        100% {
             opacity: 100%;
             -webkit-clip-path: inset(0 0 0 0);
                     clip-path: inset(0 0 0 0);
@@ -1120,13 +1120,13 @@ p {
 }
 
 @-webkit-keyframes title-wipe {
-    from {
+    0% {
         opacity: 0;
         -webkit-clip-path: inset(0 100% 0 0);
                 clip-path: inset(0 100% 0 0);
     }
 
-    to {
+    100% {
         opacity: 100%;
         -webkit-clip-path: inset(0 0 0 0);
                 clip-path: inset(0 0 0 0);
@@ -1134,13 +1134,13 @@ p {
 }
 
 @keyframes title-wipe {
-    from {
+    0% {
         opacity: 0;
         -webkit-clip-path: inset(0 100% 0 0);
                 clip-path: inset(0 100% 0 0);
     }
 
-    to {
+    100% {
         opacity: 100%;
         -webkit-clip-path: inset(0 0 0 0);
                 clip-path: inset(0 0 0 0);
