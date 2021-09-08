@@ -1027,6 +1027,14 @@ p {
         opacity: 0;
     }
 
+    25% {
+        opacity: 25%;
+    }
+
+    50% {
+        opacity: 50%;
+    }
+
     100% {
         opacity: 100%;
     }
@@ -1035,6 +1043,14 @@ p {
 @keyframes intersect-fade {
     0% {
         opacity: 0;
+    }
+
+    25% {
+        opacity: 25%;
+    }
+
+    50% {
+        opacity: 50%;
     }
 
     100% {
@@ -1047,6 +1063,14 @@ p {
         opacity: 0;
     }
 
+    25% {
+        opacity: 25%;
+    }
+
+    50% {
+        opacity: 50%;
+    }
+
     100% {
         opacity: 100%;
     }
@@ -1055,6 +1079,14 @@ p {
 @keyframes intersect-fade-delay {
     0% {
         opacity: 0;
+    }
+
+    25% {
+        opacity: 25%;
+    }
+
+    50% {
+        opacity: 50%;
     }
 
     100% {
@@ -1067,6 +1099,18 @@ p {
         opacity: 0;
         -webkit-clip-path: inset(0 100% 0 0);
                 clip-path: inset(0 100% 0 0);
+    }
+
+    25% {
+        opacity: 25%;
+        -webkit-clip-path: inset(0 75% 0 0);
+                clip-path: inset(0 75% 0 0);
+    }
+
+    50% {
+        opacity: 50%;
+        -webkit-clip-path: inset(0 50% 0 0);
+                clip-path: inset(0 50% 0 0);
     }
 
     100% {
@@ -1083,6 +1127,18 @@ p {
                 clip-path: inset(0 100% 0 0);
     }
 
+    25% {
+        opacity: 25%;
+        -webkit-clip-path: inset(0 75% 0 0);
+                clip-path: inset(0 75% 0 0);
+    }
+
+    50% {
+        opacity: 50%;
+        -webkit-clip-path: inset(0 50% 0 0);
+                clip-path: inset(0 50% 0 0);
+    }
+
     100% {
         opacity: 100%;
         -webkit-clip-path: inset(0 0 0 0);
@@ -1097,6 +1153,18 @@ p {
             -webkit-clip-path: inset(0 0 100% 0);
                     clip-path: inset(0 0 100% 0);
         }
+
+        25% {
+            opacity: 25%;
+            -webkit-clip-path: inset(0 0 75% 0);
+                    clip-path: inset(0 0 75% 0);
+        }
+    
+        50% {
+            opacity: 50%;
+            -webkit-clip-path: inset(0 0 50% 0);
+                    clip-path: inset(0 0 50% 0);
+        }
     
         100% {
             opacity: 100%;
@@ -1109,6 +1177,18 @@ p {
             opacity: 0;
             -webkit-clip-path: inset(0 0 100% 0);
                     clip-path: inset(0 0 100% 0);
+        }
+
+        25% {
+            opacity: 25%;
+            -webkit-clip-path: inset(0 0 75% 0);
+                    clip-path: inset(0 0 75% 0);
+        }
+    
+        50% {
+            opacity: 50%;
+            -webkit-clip-path: inset(0 0 50% 0);
+                    clip-path: inset(0 0 50% 0);
         }
     
         100% {
@@ -1126,6 +1206,18 @@ p {
                 clip-path: inset(0 100% 0 0);
     }
 
+    25% {
+        opacity: 25%;
+        -webkit-clip-path: inset(0 75% 0 0);
+                clip-path: inset(0 75% 0 0);
+    }
+
+    50% {
+        opacity: 50%;
+        -webkit-clip-path: inset(0 50% 0 0);
+                clip-path: inset(0 50% 0 0);
+    }
+
     100% {
         opacity: 100%;
         -webkit-clip-path: inset(0 0 0 0);
@@ -1138,6 +1230,18 @@ p {
         opacity: 0;
         -webkit-clip-path: inset(0 100% 0 0);
                 clip-path: inset(0 100% 0 0);
+    }
+
+    25% {
+        opacity: 25%;
+        -webkit-clip-path: inset(0 75% 0 0);
+                clip-path: inset(0 75% 0 0);
+    }
+
+    50% {
+        opacity: 50%;
+        -webkit-clip-path: inset(0 50% 0 0);
+                clip-path: inset(0 50% 0 0);
     }
 
     100% {
