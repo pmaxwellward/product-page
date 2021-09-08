@@ -998,27 +998,44 @@ p {
 }
 
 .is-visible {
-    -webkit-animation: intersect-fade 1s ease-in normal;
+    -webkit-animation-name: intersect-fade;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-direction: normal;
             animation: intersect-fade 1s ease-in normal;
 }
 
 .is-visible-delay {
-    -webkit-animation: intersect-fade-delay 1s 0.25s ease-in normal;
+    -webkit-animation-name: intersect-fade-delay;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 0.25s;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-direction: normal;
             animation: intersect-fade-delay 1s 0.25s ease-in normal;
 }
 
 .is-visible-wipe {
-    -webkit-animation: intersect-wipe 1.5s ease-in normal;
+    -webkit-animation-name: intersect-wipe;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-direction: normal;
             animation: intersect-wipe 1.5s ease-in normal;
 }
 
 .is-visible-title {
-    -webkit-animation: title-wipe 0.45s ease-in normal;
+    -webkit-animation-name: title-wipe;
+    -webkit-animation-duration: 0.45s;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-direction: normal;
             animation: title-wipe 0.45s ease-in normal;
 }
 
 .is-visible-button {
     -webkit-animation: intersect-fade 0.5s ease-in normal;
+    -webkit-animation-name: intersect-fade;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-direction: normal;
             animation: intersect-fade 0.5s ease-in normal;    
 }
 
