@@ -112,6 +112,11 @@ window.addEventListener("load", (e) => {
     
     const canvas = document.getElementById("renderCanvas");
     const engine = new BABYLON.Engine(canvas, true);
+
+    canvas.addEventListener("webglcontextlost", function(event) {
+        event.preventDefault();
+        console.log("context lost. use a better computer");
+    }, false);
     
     const createScene = () => {
     
@@ -153,6 +158,6 @@ window.addEventListener("load", (e) => {
     engine.runRenderLoop(function() {
         scene.render()
     });
-    
+
 });
 
