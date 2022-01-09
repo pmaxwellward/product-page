@@ -14,30 +14,18 @@ window.addEventListener("load", (e) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 
-                // Apply animation when intersection with viewport is observed 
+                // Apply animation based on class when intersection with viewport is observed 
 
-                if (entry.target.classList.contains("l-info-text")) {
-                    entry.target.classList.add("is-visible");
-                } 
-
-                if (entry.target.classList.contains("specs-title")) {
-                    entry.target.classList.add("is-visible");
-                } 
-
-                if (entry.target.classList.contains("l-specs")) {
-                    entry.target.classList.add("is-visible");
-                }
-
-                if (entry.target.classList.contains("l-product")) {
-                    entry.target.classList.add("is-visible");
-                }
-                
                 if (entry.target.classList.contains("specs-checklist")) {
                     entry.target.classList.add("is-visible-wipe");
-                }
-
-                if (entry.target.classList.contains("superscript")) {
+                } 
+                
+                else if (entry.target.classList.contains("superscript")) {
                     titleAnimation(entry.target);
+                } 
+                
+                else {
+                    entry.target.classList.add("is-visible");
                 }
                 
                 // Use delay if desktop client
